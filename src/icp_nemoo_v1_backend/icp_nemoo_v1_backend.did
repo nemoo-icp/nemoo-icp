@@ -1,0 +1,36 @@
+type FisherArg = record {
+    id: text;
+    name: text;
+    city: text;
+    age: int32;
+};
+
+
+type FishArg = record {
+    id: text;
+    tag_id: text;
+    fisher: text;
+    location: text;
+    date_catch: text;
+    date_process: text;
+    latitute: text;
+    longitude: text;
+    gross_weight: int32;
+    sekami_1: int32;
+    sekami_2: int32;
+    haranaka_1: int32;
+    haranaka_2: int32;
+    toro: int32;
+    head: int32;
+    tail: int32;
+    bone: int32;
+    skin: int32;
+};
+
+service : {
+    "get_command": () -> (text) query;
+    "get_fisher": (text) -> (FisherArg) query;
+    "get_fish": (text) -> (FishArg) query;
+    "save_fisher": (FisherArg) -> (text);
+    "save_fish": (FishArg) -> (text);
+}
