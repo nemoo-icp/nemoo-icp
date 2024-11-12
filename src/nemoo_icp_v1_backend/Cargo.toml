@@ -1,5 +1,5 @@
 [package]
-name = "icp_nemoo_v1_backend"
+name = "nemoo_icp_v1_backend"
 version = "0.1.0"
 edition = "2021"
 

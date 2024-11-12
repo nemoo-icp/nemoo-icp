@@ -7,7 +7,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 
 const isDevelopment = process.env.NODE_ENV !== "production";
 
-const frontendDirectory = "icp_nemoo_v1_frontend";
+const frontendDirectory = "nemoo_icp_v1_frontend";
 
 const frontend_entry = path.join("src", frontendDirectory, "src", "index.html");
 

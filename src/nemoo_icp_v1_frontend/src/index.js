@@ -1,4 +1,4 @@
-import { icp_nemoo_v1_backend } from "../../declarations/icp_nemoo_v1_backend";
+import { nemoo_icp_v1_backend } from "../../declarations/nemoo_icp_v1_backend";
 
 document.querySelector("form").addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -9,7 +9,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
   button.setAttribute("disabled", true);
 
   // Interact with foo actor, calling the greet method
-  const greeting = await icp_nemoo_v1_backend.greet(name);
+  const greeting = await nemoo_icp_v1_backend.greet(name);
 
   button.removeAttribute("disabled");
 

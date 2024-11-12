@@ -855,20 +855,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "icp_nemoo_v1_backend"
-version = "0.1.0"
-dependencies = [
- "candid 0.8.4",
- "ic-cdk 0.7.4",
- "ic-cdk-macros 0.8.2",
- "ic-ledger-types",
- "lazy_static",
- "marker",
- "serde",
- "serde_derive",
-]
-
-[[package]]
 name = "idna"
 version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1105,6 +1091,20 @@ dependencies = [
  "security-framework",
  "security-framework-sys",
  "tempfile",
+]
+
+[[package]]
+name = "nemoo_icp_v1_backend"
+version = "0.1.0"
+dependencies = [
+ "candid 0.8.4",
+ "ic-cdk 0.7.4",
+ "ic-cdk-macros 0.8.2",
+ "ic-ledger-types",
+ "lazy_static",
+ "marker",
+ "serde",
+ "serde_derive",
 ]
 
 [[package]]
